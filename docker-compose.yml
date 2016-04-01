@@ -1,0 +1,6 @@
+darkhttpd:
+  build: .
+  environment:
+    - "VIRTUAL_HOST=dockercloud-maintenance.*"
+  volumes:
+    - /workbench/dockercloud-maintenance/code:/home/www
